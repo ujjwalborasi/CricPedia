@@ -1,0 +1,48 @@
+.Main-Container{
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+}
+.Middle-Container{display: flex;
+    align-items: center;
+    justify-content: center;
+width: 80%;
+}
+.Button-Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ width: 80%;
+}
+.Home-Button{
+    background-color: black;
+    color: white;
+    padding: 1.5rem 2.5rem;
+    margin: 1.5rem;
+    text-decoration: none !important;
+}
+.Button-Text{
+    text-decoration: none !important;
+    transition: 0.3s;
+
+}
+.Button-Icon{
+color: thistle;
+visibility: hidden;
+opacity: 0;
+transform: translateX(-1rem);
+transition: 0.4s, visibility 0s, opacity 0.5s linear;
+}
+/* On Hover Functionality of Button */
+.Home-Button:hover :nth-child(1){
+    color: var(--Primary-Font-Color) !important;
+    transform: translateX(-0.6rem) ; 
+}
+.Home-Button:hover .Button-Icon{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(1.2rem) ;
+}
