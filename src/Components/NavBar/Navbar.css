@@ -1,0 +1,53 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    .Navbackground{
+        background-color:var(--main-bg-color);
+    }
+.temp {
+    color: var(--Font-main-color) !important;
+    background: radial-gradient(circle, #1b363d 0%, #162E37 100%);
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.menu_active {
+    color: chartreuse;
+    font-weight: bold;
+    border-bottom: 2px solid chartreuse;
+}
+
+.navlink {
+    color: var(--Font-main-color);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+}
+/* 
+.nav-li-sty {
+font-family: 'Domine', serif;
+color: white;
+}
+
+.nav-li-sty:hover {
+color: chartreuse;
+} */
+
+.burg {
+    display: flex;
+    flex-direction: column;
+}
+/* Navigation Bar styling */
+
+.Navbar-container {
+    background: radial-gradient(circle, #1b363d 0%, #162E37 100%);
+}
+
+.temp {
+    color: var(--Font-main-color);
+    background: radial-gradient(circle, #1b363d 0%, #162E37 100%);
+}
