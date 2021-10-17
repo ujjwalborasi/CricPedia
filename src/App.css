@@ -18,3 +18,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+    
+    @media screen and (max-width: 800px) {
+      .HomeButtonContainer{
+          display: flex;
+          flex-direction:column ;
+          width: 100%;
+      }
+      .SmallCards{
+          flex: 1 1 10%;
+          height: 15vh;
+          margin: 0.2rem;
+      }
+      .Recommendations{
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          width: 100%;
+          
+      }
+      .RecommendationsSection1{
+          width: 100%;
+      }
+      .RecommendationsText{
+          display: none;
+         
+          visibility: hidden;
+      }
+       }
