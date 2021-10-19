@@ -17,7 +17,7 @@ function Home() {
                         </NavLink>
                     </div>
                 </div>
-                <div className='Middle-Container'>
+                <div className='Middle-Container' id='sec2'>
                     <div className='Box-Container'>
                         <Link className="Small-Box" exact to="/Blogs" > <span className="Box-Text"> Blogs</span> <FontAwesomeIcon icon={faBlog} className="Box-Icon" size="1px" /> </Link>
                         <Link className="Small-Box" exact to="/list/Rank" > <span className="Box-Text"> Stats</span> <FontAwesomeIcon icon={faList} className="Box-Icon" size="1px" /> </Link>
@@ -30,7 +30,10 @@ function Home() {
                 </div>
 
                 <div className='Middle-Container'>
-                    
+                    <div className='Blog-Preview-Container'>
+                        <p className='Title-Blog'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis tempora qui consectetur ullam vitae ut blanditiis, mollitia nobis quas suscipit.</p>
+                        <div className='Blog-Poster'></div>
+                    </div>
 
                 </div>
 

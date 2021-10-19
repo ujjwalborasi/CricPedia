@@ -20,7 +20,7 @@ background-color: chartreuse;
     display: flex;
     align-items: center;
     justify-content: center;
- width: 80%;
+    width: 80%;
 }
 .Home-Button{
     display: flex;
@@ -56,8 +56,12 @@ transition: 0.4s, visibility 0s, opacity 0.5s linear;
     transform: translateX(1.2rem) ;
 }
 
+
+/* Box Container */
+
 .Box-Container{
     margin: 2rem;
+    padding: 1rem;
     display: flex;
     height: 50vh;
     width: 60%;
@@ -105,4 +109,26 @@ transition: 0.4s, visibility 0s, opacity 0.5s linear;
     visibility: visible;
     opacity: 1;
 transform: translateX(1.2rem) ;
+}
+
+
+
+.Blog-Preview-Container{
+    height: 50vh;
+    width: 100%;
+    background-color:turquoise;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Blog-Preview-Container >*{
+    flex: 1 1 50%;
+}
+.Title-Blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Blog-Poster{
+    background-color: tomato;
+    
 }

@@ -5,6 +5,7 @@ import Blogs from './Components/Blogs/Blogs'
 import Stadiums from './Components/Stadiums/Stadiums'
 import Navbar from './Components/NavBar/Navbar';
 import Home from './Components/Home/Home';
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/Matches" component={Matches}></Route>
           <Route exact path="/Stadiums" component={Stadiums}></Route>
         </Switch>
+        <Footer></Footer>
       </BrowserRouter>
     </>
   );
