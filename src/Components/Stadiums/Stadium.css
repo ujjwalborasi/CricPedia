@@ -7,7 +7,7 @@
   width: 70%;
 }
 .stadium-Main{
-    background-color: chartreuse;
+    background-color: var(--Theme-Color-1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--Theme-Color-2);
     border-radius: 0.2rem;
     box-shadow: 4px 2px 11px slategray;
 
@@ -49,6 +49,7 @@
     margin: 2px;
     padding-top: 0.2rem;
     align-items: center;
+    text-decoration: none !important;
     justify-content: center;
 }
 .Name{
@@ -56,11 +57,13 @@
     font-family:'Rajdhani', sans-serif; 
     font-weight: bold;
     font-size: 1.5rem;
+    color: var(--Font-main-color);
     
     
 }
 .text{
     text-decoration: none !important;
+    color: var(--Font-main-color);
 
     font-family:'Rajdhani', sans-serif; 
     font-size: 1rem;
