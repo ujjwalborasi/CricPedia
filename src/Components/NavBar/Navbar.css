@@ -9,6 +9,13 @@
     color: var(--Font-main-color) !important;
     background: radial-gradient(circle, #1b363d 0%, #162E37 100%);
 }
+.Title{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.Title:hover{
+    color: var(--HoverColor);
+}
 
 .navbar-brand {
     font-family: 'Poppins', sans-serif;

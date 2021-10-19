@@ -12,7 +12,7 @@ function Navbar() {
            <div className="row">
                <div className="col-10 mx-auto">
             <nav className="navbar navbar-expand-lg navbar-dark  bg-transparent">
-        <NavLink className="navbar-brand " to="/"><span style={{fontSize:"35px"}}>C</span>ric <span style={{fontSize:"35px"}}>P</span>edia</NavLink>
+        <NavLink className="navbar-brand " to="/"><h1 className='Title'>CricPedia</h1></NavLink>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className=" navbar-toggler-icon btn-sty"></span>
         </button>
