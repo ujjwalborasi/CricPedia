@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import mcgImage from '../../Assets/mcg.jpg'
 import { faArrowRight, faBlog, faCalendar, faFlag, faHome, faList, faUser, faUsers } from '@fortawesome/free-solid-svg-icons';
 import './Home.css'
 function Home() {
@@ -32,7 +33,8 @@ function Home() {
                 <div className='Middle-Container'>
                     <div className='Blog-Preview-Container'>
                         <p className='Title-Blog'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis tempora qui consectetur ullam vitae ut blanditiis, mollitia nobis quas suscipit.</p>
-                        <div className='Blog-Poster'></div>
+                        {/* <div className='Blog-Poster'></div> */}
+                        {/* <img className="Blog-Poster" src={mcgImage} alt='#' /> */}
                     </div>
 
                 </div>

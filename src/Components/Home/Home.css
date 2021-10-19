@@ -125,10 +125,16 @@ transform: translateX(1.2rem) ;
 }
 .Title-Blog{
     display: flex;
+    font-weight: bolder;
+    font-family:'Rajdhani', sans-serif;
+    padding: 0.6rem;
     align-items: center;
     justify-content: center;
 }
 .Blog-Poster{
-    background-color: tomato;
-    
+    background-color: var(--Theme-Color-2);
+ height: inherit;
+ max-height: inherit;
+
+ padding: 1rem;
 }
