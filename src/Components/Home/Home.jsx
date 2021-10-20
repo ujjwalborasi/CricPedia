@@ -8,7 +8,7 @@ function Home() {
     return (
         <>
             <div className='Main-Container'>
-                <div className='Middle-Container'>
+                <div className='Middle-Container' id='sec1'>
                     <div className='Button-Container'>
                         <NavLink className="Home-Button" exact to="/Matches">
                             <span className="Button-Text">SEE MATCHES</span> <FontAwesomeIcon icon={faArrowRight} size="1px" className="Button-Icon" />
@@ -30,7 +30,7 @@ function Home() {
                     </div>
                 </div>
 
-                <div className='Middle-Container'>
+                <div className='Middle-Container' id='sec3'>
                     <div className='Blog-Preview-Container'>
                         <p className='Title-Blog'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis tempora qui consectetur ullam vitae ut blanditiis, mollitia nobis quas suscipit.</p>
                         {/* <div className='Blog-Poster'></div> */}
