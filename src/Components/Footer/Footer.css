@@ -4,12 +4,14 @@
     align-items: center;
     grid-template-columns: auto auto auto;
     grid-column-gap: 50px;
-    background-color: var(--Font-main-color);
+    background-color: var(--Theme-Color-2);
 }
 .Column{
     width: 100%;
     display: grid;
-    color: var(--Primary-Font-Color);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder;
+    color: var(--Font-main-color);
     justify-content: center;
     align-items: center;
     grid-template-columns: auto auto auto;
@@ -26,7 +28,7 @@ color: var(--HoverColor);
 .Icon{
     /* background-color: black; */
     margin: 0.9rem;
-    color: var(--Primary-Font-Color);
+    color: var(--Font-main-color);
     /* transform: scale(0.5); */
     transition: 0.8s;
 }
