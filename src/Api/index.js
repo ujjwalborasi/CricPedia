@@ -1,3 +1,12 @@
 import axios from 'axios';
-const url = 'http://localhost:5000/posts';
-const FetchPosts = () => axios.get(url);
+const url = 'https://polar-tundra-98856.herokuapp.com/JSON/Stadiums.json';
+
+const FetchData = async () => {
+    try {
+      const { data:{ Sheet2} } = await axios.get(url);
+        
+      return Sheet2;
+    } catch (error) {
+    }
+  }
+  export default FetchData;
