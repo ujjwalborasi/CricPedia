@@ -43,12 +43,12 @@ function Stadiums(props) {
      {(props.data)&& (props.data.map(({Capacity, Name, Country, City, CountryCode})=>(<Tilt options={options}>
                 <Link exact to ={ `/Stadiums/${Name}`}>
             <div className = 'stadium'>
-                <img className="StadiumImage" src={`https://flagcdn.com/16x12/${CountryCode}.png`} alt='#' />
+                <img className="StadiumImage" src={`https://polar-tundra-98856.herokuapp.com/Images/${Name}.jpg`} alt='#' />
                 <div className='Stadium_Info'>
                 <h2 className='Name'>  {Name}</h2>
                 <p className='text'> {City}</p>
                 <p className='text'> {Country}</p>
-                <p className='text'> {Capacity}</p>
+                <p className='text'>Capacity: {Capacity}</p>
                 <img src={`https://flagcdn.com/16x12/${CountryCode}.png`} srcset={`https://flagcdn.com/32x24/${CountryCode}.png 2x,https://flagcdn.com/48x36/${CountryCode}.png 3x`} width="16"   height="12" alt="flag"></img>
                 </div>
             </div>
