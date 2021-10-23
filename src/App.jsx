@@ -11,25 +11,29 @@ import FetchData from './Api';
 
 export class App extends Component {
   state = {
-    Data: {}
+    Data: {},
+    Tem: 'ind'
   }
   async componentDidMount() {
-    this.state.Data = await FetchData();
-console.log(typeof(this.state.Data))
+    this.setState({ Data: (await FetchData()) });
+console.log(this.state.Data)
   }
 
 
   render() {
-   const {Data} = this.state
+    const { Data, Tem } = this.state
     return (
       <>
       <BrowserRouter>
         <Navbar></Navbar>
         <Switch>
-          <Route exact path="/" component={Home} ></Route>
+          <Route exact path="/" component={Home}  ></Route>
           <Route exact path="/Blogs" component={Blogs}></Route>
           <Route exact path="/Matches" component={Matches}></Route>
-          <Route exact path="/Stadiums"  render={(Data) => <Stadiums data={Data} />}></Route>
+          <Route exact path="/Stadiums" render={(props)=>(
+            <Stadiums {...props} data={Data} tem={Tem} />
+          )}  />
+           
         </Switch>
         <Footer></Footer>
       </BrowserRouter>

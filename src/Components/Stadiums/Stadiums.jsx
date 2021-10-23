@@ -22,7 +22,7 @@ function Tilt(props) {
   
     return <div ref={tilt} {...rest} />;
   }
-function Stadiums({data}) {
+function Stadiums(props) {
    
     const options = {
         scale: 1.1,
@@ -32,9 +32,9 @@ function Stadiums({data}) {
         "max-glare": 0.7
     
       }
-      if (!data.Data
+      if (!props.data
         ) {
-            return <>{typeof(data.Data)}</>
+            return <>Loading.....</>
         }
 
 
@@ -49,8 +49,8 @@ function Stadiums({data}) {
             <div className = 'stadium'>
                 <img className="StadiumImage" src={mcgImage} alt='#' />
                 <div className='Stadium_Info'>
-                <h2 className='Name'> {typeof(data.Data)} Melbourne Cricket Ground</h2>
                 <p className='text'> Melbourne, Australia</p>
+                <h2 className='Name'>  Melbourne Cricket Ground</h2>
                 </div>
             </div>
                 </Link>
