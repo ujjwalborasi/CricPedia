@@ -32,19 +32,29 @@ function Stadiums(props) {
         "max-glare": 0.7
     
       }
-      if (!props.data
+      if (!props
         ) {
-            return <>Loading.....</>
+
+            return <>{(props) && (console.log(props.data[0]))  }Loading.....</>
         }
-
-
-
-
     return (
     <div className='stadium-Main'>
     <div className='cardscontainer'>
-     
-            <Tilt options={options}>
+     {(props.data)&& (props.data.map(({Capacity, Name, Country, City})=>(<Tilt options={options}>
+                <Link exact to = '/Stadiums/MCG'>
+            <div className = 'stadium'>
+                <img className="StadiumImage" src={mcgImage} alt='#' />
+                <div className='Stadium_Info'>
+                <h2 className='Name'>  {Name}</h2>
+                <p className='text'> {City}</p>
+                <p className='text'> {Country}</p>
+                <p className='text'> {Capacity}</p>
+                <img src="https://flagcdn.com/16x12/za.png" srcset="https://flagcdn.com/32x24/in.png 2x,https://flagcdn.com/48x36/za.png 3x" width="16"   height="12" alt="South Africa"></img>
+                </div>
+            </div>
+                </Link>
+            </Tilt>)) )}
+            {/* <Tilt options={options}>
                 <Link exact to = '/Stadiums/MCG'>
             <div className = 'stadium'>
                 <img className="StadiumImage" src={mcgImage} alt='#' />
@@ -54,7 +64,7 @@ function Stadiums(props) {
                 </div>
             </div>
                 </Link>
-            </Tilt>
+            </Tilt> */}
             
            
         </div>
