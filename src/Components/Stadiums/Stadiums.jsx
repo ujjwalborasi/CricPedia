@@ -40,16 +40,16 @@ function Stadiums(props) {
     return (
     <div className='stadium-Main'>
     <div className='cardscontainer'>
-     {(props.data)&& (props.data.map(({Capacity, Name, Country, City})=>(<Tilt options={options}>
-                <Link exact to = '/Stadiums/MCG'>
+     {(props.data)&& (props.data.map(({Capacity, Name, Country, City, CountryCode})=>(<Tilt options={options}>
+                <Link exact to ={ `/Stadiums/${Name}`}>
             <div className = 'stadium'>
-                <img className="StadiumImage" src={mcgImage} alt='#' />
+                <img className="StadiumImage" src={`https://flagcdn.com/16x12/${CountryCode}.png`} alt='#' />
                 <div className='Stadium_Info'>
                 <h2 className='Name'>  {Name}</h2>
                 <p className='text'> {City}</p>
                 <p className='text'> {Country}</p>
                 <p className='text'> {Capacity}</p>
-                <img src="https://flagcdn.com/16x12/za.png" srcset="https://flagcdn.com/32x24/in.png 2x,https://flagcdn.com/48x36/za.png 3x" width="16"   height="12" alt="South Africa"></img>
+                <img src={`https://flagcdn.com/16x12/${CountryCode}.png`} srcset={`https://flagcdn.com/32x24/${CountryCode}.png 2x,https://flagcdn.com/48x36/${CountryCode}.png 3x`} width="16"   height="12" alt="flag"></img>
                 </div>
             </div>
                 </Link>
