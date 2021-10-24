@@ -8,11 +8,12 @@ import Home from './Components/Home/Home';
 import Footer from './Components/Footer/Footer';
 import React, { Component } from 'react'
 import FetchData from './Api';
+import Stats from './Components/Stats/Stats';
 
 export class App extends Component {
   state = {
     Data: {},
-    Tem: 'ind'
+    
   }
   async componentDidMount() {
     this.setState({ Data: (await FetchData()) });
@@ -29,9 +30,10 @@ console.log(this.state.Data)
         <Switch>
           <Route exact path="/" component={Home}  ></Route>
           <Route exact path="/Blogs" component={Blogs}></Route>
+          <Route exact path="/Stats" component={Stats}></Route>
           <Route exact path="/Matches" component={Matches}></Route>
           <Route exact path="/Stadiums" render={(props)=>(
-            <Stadiums {...props} data={Data} tem={Tem} />
+            <Stadiums {...props} data={Data}  />
           )}  />
            
         </Switch>

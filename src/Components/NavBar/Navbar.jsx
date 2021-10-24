@@ -19,7 +19,10 @@ function Navbar() {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ml-auto ">
                 <li className="nav-item active">
-                  <NavLink activeClassName="menu_active" className="nav-link nav-li-sty " exact to="/">Blogs<span className="sr-only">(current)</span></NavLink>
+                  <NavLink activeClassName="menu_active" className="nav-link nav-li-sty " exact to="/Blogs">Blogs<span className="sr-only">(current)</span></NavLink>
+                </li>
+                <li className="nav-item active">
+                  <NavLink activeClassName="menu_active" className="nav-link nav-li-sty " exact to="/Stats">Stats<span className="sr-only">(current)</span></NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink activeClassName="menu_active" className="nav-link nav-li-sty" exact to="/Matches">Matches</NavLink>
