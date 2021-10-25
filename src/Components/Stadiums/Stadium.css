@@ -3,8 +3,12 @@
     align-items: center;
     justify-content: center;
     grid-template-columns: auto auto auto;
-  padding: 10px;
-  width: 70%;
+    padding: 10px;
+    width: 90%;
+}
+.Link{
+    text-decoration: none !important;
+    
 }
 .stadium-Main{
     background-color: var(--Theme-Color-1);
@@ -15,9 +19,10 @@
 }
 .stadium{
     margin: 0.5rem;
+    text-decoration: none !important;
     padding: 0.2rem;
     display: flex;
-    height: 60vh;
+    height: 70vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;

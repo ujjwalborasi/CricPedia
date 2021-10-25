@@ -21,7 +21,7 @@ function Footer() {
                         <FontAwesomeIcon icon={faLinkedin} className="Icon" color="white" />
                         <FontAwesomeIcon icon={faTelegram} className="Icon" color="white" />
                         <FontAwesomeIcon icon={faPinterest} className="Icon" color="white" />
-                        <FontAwesomeIcon icon={faWhatsapp} className="Icon" color="white" />
+                     
                     </div>
                 </div>
                 <div className="Column">
