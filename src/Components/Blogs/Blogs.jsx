@@ -5,6 +5,9 @@ function Blogs() {
     return (
        
        <>
+       <div className='Container'>
+
+       </div>
        </>
      
     )

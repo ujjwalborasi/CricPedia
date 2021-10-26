@@ -1,5 +1,5 @@
 .Main-Container{
-    background-color: var(--Theme-Color-2);
+    background-color: var(--Theme-Color-1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,9 +14,11 @@
     background-color: var(--Theme-Color-1);
 }
 #sec1{
+   
     width: 100%;
 height: 80vh;
 }
+
 .Button-Container{
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(3px);
@@ -124,7 +126,7 @@ transform: translateX(1.2rem) ;
 .Blog-Preview-Container{
     height: 50vh;
     width: 100%;
-    background-color:var(--Theme-Color-2);
+    background-color:var(--Theme-Color-1);
     display: flex;
     flex-wrap: wrap;
 }
@@ -140,7 +142,7 @@ transform: translateX(1.2rem) ;
     justify-content: center;
 }
 .Blog-Poster{
-    background-color: var(--Theme-Color-2);
+    background-color: var(--Theme-Color-1);
  height: inherit;
  max-height: inherit;
  padding: 1rem;
