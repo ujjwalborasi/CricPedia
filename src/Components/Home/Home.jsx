@@ -10,7 +10,7 @@ function Home() {
         <>
             <div className='Main-Container'>
                 <div className='Middle-Container' id='sec1'>
-                 
+               
                     <div className='Button-Container'>
                         <NavLink className="Home-Button" exact to="/Matches">
                             <span className="Button-Text">SEE MATCHES</span> <FontAwesomeIcon icon={faArrowRight} size="1px" className="Button-Icon" />

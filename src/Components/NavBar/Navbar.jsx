@@ -1,11 +1,13 @@
 import React from 'react'
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
-
 import { NavLink } from 'react-router-dom';
 import "./Navbar.css";
 
 function Navbar() {
+
+
+
   return (
 
     <div className="container-fluid Navbackground">
@@ -30,7 +32,7 @@ function Navbar() {
                 <li className="nav-item">
                   <NavLink activeClassName="menu_active" className="nav-link nav-li-sty" exact to="/Stadiums">Stadiums</NavLink>
                 </li>
-
+                
               </ul>
             </div>
           </nav>
