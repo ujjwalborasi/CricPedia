@@ -1,0 +1,16 @@
+.Slider-Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    height: 100vh;
+    background-color: tomato;
+    width: 100%;
+}
+.Slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    background: var(--Theme-Color-2);
+}

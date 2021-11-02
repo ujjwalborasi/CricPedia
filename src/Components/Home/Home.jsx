@@ -3,6 +3,7 @@ import { NavLink, Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faBlog, faCalendar, faFlag, faHome, faList, faUser, faUsers } from '@fortawesome/free-solid-svg-icons';
 import './Home.css'
+import ImageSlider from '../Image-Slider/ImageSlider';
 function Home() {
     return (
         <>
@@ -26,7 +27,7 @@ function Home() {
                         <Link className="Small-Box" exact to="/Stats" > <span className="Box-Text"> Stats</span> <FontAwesomeIcon icon={faList} className="Box-Icon" size="1px" /> </Link>
                         <Link className="Small-Box" exact to="/Countries" > <span className="Box-Text"> Country</span> <FontAwesomeIcon icon={faFlag} className="Box-Icon" size="1px" /> </Link>
                         <Link className="Small-Box" exact to="/Stadiums" > <span className="Box-Text"> Stadiums</span> <FontAwesomeIcon icon={faHome} className="Box-Icon" size="1px" /> </Link>
-                        <Link className="Small-Box" exact to="/Countries" > <span className="Box-Text"> Players</span> <FontAwesomeIcon icon={faUser} className="Box-Icon" size="1px" /> </Link>
+                        <Link className="Small-Box" exact to="/Profiles" > <span className="Box-Text"> Players</span> <FontAwesomeIcon icon={faUser} className="Box-Icon" size="1px" /> </Link>
                         <Link className="Small-Box" exact to="/Countries" > <span className="Box-Text"> Teams</span> <FontAwesomeIcon icon={faUsers} className="Box-Icon" size="1px" /> </Link>
                         <Link className="Small-Box" exact to="/Matches" > <span className="Box-Text"> Schedule</span> <FontAwesomeIcon icon={faCalendar} className="Box-Icon" size="1px" /> </Link>
                     </div>
@@ -42,7 +43,8 @@ function Home() {
                     </div>
 
                 </div>
-           
+                
+                <ImageSlider/>
             </div>
         </>
     )

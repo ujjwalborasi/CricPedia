@@ -9,6 +9,7 @@ import Footer from './Components/Footer/Footer';
 import React, { Component } from 'react'
 import FetchData from './Api';
 import Stats from './Components/Stats/Stats';
+import Profiles from './Components/Profiles/Profiles';
 
 export class App extends Component {
   state = {
@@ -22,7 +23,7 @@ console.log(this.state.Data)
 
 
   render() {
-    const { Data, Tem } = this.state
+    const { Data } = this.state
     return (
       <>
       <BrowserRouter>
@@ -32,6 +33,7 @@ console.log(this.state.Data)
           <Route exact path="/Blogs" component={Blogs}></Route>
           <Route exact path="/Stats" component={Stats}></Route>
           <Route exact path="/Matches" component={Matches}></Route>
+          <Route exact path="/Profiles" component={Profiles}></Route>
           <Route exact path="/Stadiums" render={(props)=>(
             <Stadiums {...props} data={Data}  />
           )}  />
