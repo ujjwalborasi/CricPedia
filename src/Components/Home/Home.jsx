@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import mcgImage from '../../Assets/mcg.jpg'
 import { faArrowRight, faBlog, faCalendar, faFlag, faHome, faList, faUser, faUsers } from '@fortawesome/free-solid-svg-icons';
 import './Home.css'
 function Home() {
@@ -9,7 +8,9 @@ function Home() {
         <>
             <div className='Main-Container'>
                 <div className='Middle-Container' id='sec1'>
-               
+                {/* <video autoPlay loop muted className='Video-Background'>
+                    <source src='' type='video/mp4'></source>
+                </video> */}
                     <div className='Button-Container'>
                         <NavLink className="Home-Button" exact to="/Matches">
                             <span className="Button-Text">SEE MATCHES</span> <FontAwesomeIcon icon={faArrowRight} size="1px" className="Button-Icon" />
