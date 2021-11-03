@@ -12,5 +12,18 @@
     align-items: center;
     justify-content: center;
     width: 95%;
+    overflow: hidden;
     background: var(--Theme-Color-2);
+}
+.Slider-Main-Image{
+    position: absolute;
+   z-index:1 ;
+}
+.Slider-Faded-Right-Image{
+    transform: translateX(-7rem) scale(0.7);
+    
+}
+.Slider-Faded-Left-Image{
+    transform: translateX(7rem) scale(0.7);
+    
 }
