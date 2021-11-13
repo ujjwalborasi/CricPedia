@@ -1,12 +1,12 @@
+import React, { Component } from 'react'
 import './App.css';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Home from './Components/Home/Home';
+import Navbar from './Components/NavBar/Navbar';
 import Matches from './Components/Matches/Matches';
 import Blogs from './Components/Blogs/Blogs'
 import Stadiums from './Components/Stadiums/Stadiums'
-import Navbar from './Components/NavBar/Navbar';
-import Home from './Components/Home/Home';
 import Footer from './Components/Footer/Footer';
-import React, { Component } from 'react'
 import FetchData from './Api';
 import Stats from './Components/Stats/Stats';
 import Profiles from './Components/Profiles/Profiles';

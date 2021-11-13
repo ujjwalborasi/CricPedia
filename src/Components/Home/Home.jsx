@@ -35,7 +35,7 @@ function Home() {
 
                 <div className='Middle-Container' id='sec3'>
                     <div className='Blog-Preview-Container'>
-                        <p className='Title-Blog'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis tempora qui consectetur ullam vitae ut blanditiis, mollitia nobis quas suscipit.</p>
+                        <p className='Title-Blog'>Lorem ipsum </p>
                       
                             <img className='Blog-Poster' src ={`https://polar-tundra-98856.herokuapp.com/Images/Bellerive Oval.jpg`}/>
                         
