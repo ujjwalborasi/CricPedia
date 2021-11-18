@@ -32,7 +32,7 @@ function Tournaments(props) {
       <div className='Container'>
         {(props.data.International_Tournaments) && (props.data.International_Tournaments.map(({ Name, Year, Format }) => (
 
-          (Format == 'Test') && (<Tilt options={options} className='card'>
+          (Format === 'Test') && (<Tilt options={options} className='card'>
             <Link exact to={`/${Name}`} className='Link'>
 
               <img className="Logo" src={`https://polar-tundra-98856.herokuapp.com/Images/Tournaments/International/${Format}/${Name}.png`} alt='#' />
@@ -44,7 +44,7 @@ function Tournaments(props) {
       </div>
       <div className='Container'>
         {(props.data.International_Tournaments) && (props.data.International_Tournaments.map(({ Name, Year, Format }) => (
-          (Format == 'ODI') && (<Tilt options={options} className='card'>
+          (Format === 'ODI') && (<Tilt options={options} className='card'>
             <Link exact to={`/${Name}`} className='Link'>
 
               <img className="Logo" src={`https://polar-tundra-98856.herokuapp.com/Images/Tournaments/International/${Format}/${Name}.png`} alt='#' />
@@ -60,7 +60,7 @@ function Tournaments(props) {
       <div className='Container'>
         {(props.data.International_Tournaments) && (props.data.International_Tournaments.map(({ Name, Year, Format }) => (
 
-          (Format == 'T20') && (<Tilt options={options} className='card'>
+          (Format === 'T20') && (<Tilt options={options} className='card'>
             <Link exact to={`/${Name}`} className='Link'>
 
               <img className="Logo" src={`https://polar-tundra-98856.herokuapp.com/Images/Tournaments/International/${Format}/${Name}.png`} alt='#' />
