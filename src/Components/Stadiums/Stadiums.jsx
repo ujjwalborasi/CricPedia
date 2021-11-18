@@ -34,16 +34,17 @@ function Stadiums(props) {
       }
       if (!props
         ) {
+            console.log(props)
 
             return <>{(props) && (console.log(props.data[0]))  }Loading.....</>
         }
     return (
     <div className='stadium-Main'>
     <div className='cardscontainer'>
-     {(props.data)&& (props.data.map(({Capacity, Name, Country, City, CountryCode})=>(<Tilt options={options}>
+     {(props.data.Stadiums)&& (props.data.Stadiums.map(({Capacity, Name, Country, City, CountryCode})=>(<Tilt options={options}>
                 <Link exact to ={ `/Stadiums/${Name}`} className='Link'>
             <div className = 'stadium'>
-                <img className="StadiumImage" src={`https://polar-tundra-98856.herokuapp.com/Images/${Name}.jpg`} alt='#' />
+                <img className="StadiumImage" src={`https://polar-tundra-98856.herokuapp.com/Images/Stadiums/${Country}/${Name}.jpg`} alt='#' />
                 <div className='Stadium_Info'>
                 <h2 className='Name'>  {Name}</h2>
                 <p className='text'> {City}</p>

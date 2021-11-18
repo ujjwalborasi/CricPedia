@@ -5,7 +5,7 @@ function Stats() {
     return (
        <>
        <div className='Container'>
-     <SearchInput/>
+    
        </div>
        </>
 

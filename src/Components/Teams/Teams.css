@@ -1,0 +1,38 @@
+
+.Container{
+    background-color: var(--Theme-Color-1);
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: var(--Theme-Color-1);
+    padding: 10px;
+}
+.Link{
+    text-decoration: none !important;
+    
+}
+.card {
+   
+    text-decoration: none !important;
+    display: flex;
+    min-height: 30vh;
+    min-width: 25%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--Theme-Color-1);
+    border-radius: 0.2rem;
+    margin: 0.5rem;
+    box-shadow: 4px 2px 11px slategray;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: none; 
+}
+.Logo{
+    height: 7rem;
+}
+@media screen and (max-width: 800px) {
+    .Container{
+        display: flex;
+        flex-direction: column;
+    }
+   }

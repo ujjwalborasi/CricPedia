@@ -7,6 +7,7 @@ import {
     , faTelegram, faPinterest, faInstagram, faYoutube, faLinkedin, faWhatsapp
 } from '@fortawesome/free-brands-svg-icons'
 import './Footer.css'
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
@@ -25,10 +26,12 @@ function Footer() {
                     </div>
                 </div>
                 <div className="Column">
-                  <p className="footlink">Commmunity</p>  
-                </div>
-                <div className="Column">
-                   <p className="footlink">Support</p> 
+                <Link className='footlink' exact to ='/Teams'>Teams</Link>
+                <Link className='footlink' exact to ='/Blogs'>Blogs</Link>
+                <Link className='footlink' exact to ='/Tournaments'>Tournaments</Link>
+                <Link className='footlink' exact to ='/Leagues'>Leagues</Link>
+                <Link className='footlink' exact to ='/Stats'>Stats</Link>
+                <Link className='footlink' exact to ='/Stadiums'>Stadiums</Link>
                 </div>
             </div>
         </>
